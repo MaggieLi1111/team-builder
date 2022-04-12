@@ -1,12 +1,9 @@
 import React from "react";
 
 const Form = (props) => {
-
-
     const { formValues, buttonText, change, submit, errors} = props;
 
-    const onChange = event =>{
-        
+    const onChange = event => {      
         const { name, value } = event.target;
         // setFormValues({ ...formValues, [event.target.name]:event.target.value})
         change(name,value);
